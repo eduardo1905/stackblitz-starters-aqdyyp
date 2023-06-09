@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div>
-      <h1>Todo List</h1>
+      <h1>Task Tracker</h1>
       <div>
         <input
           type="text"
@@ -27,6 +27,7 @@ function App() {
           onChange={(e) => setNewTask(e.target.value)}
         />
         <button onClick={handleAddTask}>Add Task</button>
+        <p> Chores Left:</p>
       </div>
       <ul>
         {tasks.map((task, index) => (
@@ -37,6 +38,7 @@ function App() {
         ))}
       </ul>
     </div>
+  
   );
 }
 
